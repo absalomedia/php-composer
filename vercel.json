@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "functions": {
+    "api/*": {
+      "runtime": "vercel-php@0.6.0"
+    }
+  },
+  "rewrites": [
+    { "source": "/favicon.ico", "destination": "https://juicy.vercel.app/favicon.ico" },
+    { "source": "/(.*)", "destination": "/api/index.php" }
+  ]
+}
